@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import PlayersSection from "./components/PlayersSection";
+import TournamentsSection from "./components/TournamentsSection";
+import TournamentTypesSection from "./components/TournamentTypesSection";
+import FanInteractionSection from "./components/FanInteractionSection";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gray-100">
+      <Navbar />
+      <HeroSection />
+      <PlayersSection />
+      <TournamentsSection />
+      <TournamentTypesSection />
+      <FanInteractionSection />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
